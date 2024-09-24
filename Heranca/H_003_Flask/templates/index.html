@@ -3,10 +3,18 @@
 
 <h1>{{ titulo }}</h1>
 <hr>
+<form action="/adicionar" method="post">
+    <input type="text" nome="let" value="" placeholder="letra">
+    <input type="text" nome="num" value="" placeholder="número">
+    <input type="submit" value="Adicionar">
+</form>
+<hr>
 <h3>Listar Componentes de Tela</h3>
 <p>Letra:</p>
 <p>Número:</p>
 <p>Rota: {{ componente.rota }}</p>
 <p>Botão: {{ componente.btn }}</p>
+<hr>
+<a href="/editar?produto=1"><button>Editar</button></a>
 
 {% endblock %}
