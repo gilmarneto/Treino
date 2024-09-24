@@ -1,0 +1,16 @@
+{% extends "template.html" %}
+{% block conteudo %}
+
+<h1>Treino_03</h1>
+<hr>
+<!-- recebendo nome do botão -->
+<p>{{ componentes.btn_form }}</p>
+<!-- recebendo rota de ação do formulario -->
+<p>{{ componentes.rota_form }}</p>
+<!-- recebendo valor do input produto -->
+<p>{{ componentes.input_produto }}</p>
+<!-- recebendo valor do input quantidade -->
+<p>{{ componentes.input_quantidade }}</p>
+<hr>
+<p><a href="/alterar_componentes"><button>Alterar Valores dos Componentes de Tela</button></a></p>
+{% endblock %}
